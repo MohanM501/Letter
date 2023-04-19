@@ -1,4 +1,5 @@
 
+import { useEffect } from 'react';
 import './App.css';
 
 const Content={
@@ -12,6 +13,9 @@ const Content={
 const {Interest,myexperience,belief,confident,Thankyou}=Content;
 
 function App() {
+  useEffect(()=>{
+    document.title="CoverLetter";
+  },[])
   return (
     <div className="App">
         <h1>Mohan M</h1>
